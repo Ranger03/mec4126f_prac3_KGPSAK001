@@ -15,6 +15,14 @@
 
 void main(void);                                                   //COMPULSORY
 
+struct age_data
+{
+	unint8_t age;
+	unint8_t month_ob;
+	unint8_t year_ob;
+	uint8_t date_ob;
+}age_date;
+
 // MAIN FUNCTION -------------------------------------------------------------|
 
 void main(void)
