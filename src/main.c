@@ -21,16 +21,29 @@ struct age_data
 	unint8_t month_ob;
 	unint8_t year_ob;
 	uint8_t date_ob;
-}age_date;
+}myAge;
 
 // MAIN FUNCTION -------------------------------------------------------------|
 
 void main(void)
-{
+{   //collecting information
+	myAge.year_ob = 2000;
+	myAge.month_ob = 06;
+	myAge.age = 22;
+	myAge.date_ob = 08;
+
+	init_LCD();
 
 
 	while(1)
-	{
+	{  char str[100];
+	 //manipulating the string
+	   for(uint8_t i=0; i<=myAge.age; i++){
+		  sprintf(str,"%d,i");
+		  lcd_putstring(str);
+		  delay(250000);
+		  lcd_command(CLEAR);
+    	}
 
 	}
 }
